@@ -55,11 +55,11 @@ document.addEventListener('DOMContentLoaded', function () {
     randomNum = Math.floor(Math.random() * proverbi.length);
 
     // Set the initial text content when the page loads
-    proverbio.innerText = "Due piccioni con una fava";
+    proverbio.innerText = "Click the button below to generate a proverbio";
 
     button.addEventListener('click', function(){
         // Access the array element directly and set the text content
         randomNum = Math.floor(Math.random() * proverbi.length);
-        proverbio.innerText = proverbi[randomNum];
+        proverbio.innerText = `"${proverbi[randomNum]}"`;
     });
 });
